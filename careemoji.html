@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    
+        <style>
+            .big_circle
+            {
+                background-color: #fbce5b;
+                width:300px;
+                height:300px;
+                border-radius: 100%;
+                background-image: linear-gradient(-150deg, #fcd15e, #f29a36);
+            }
+            .eye_l
+            {
+                position: absolute;
+                top: 60px;
+                left:80px;
+                background-color: #242746;
+                width: 40px;
+                height: 50px;
+                border-top-left-radius: 100%;
+                border-top-right-radius: 100%;
+                border-bottom-left-radius: 70%;
+                border-bottom-right-radius: 70%;
+                transform: rotate(-5deg);
+                background-image: radial-gradient(#394269 6%, #242746 60%);
+            }
+            .eye_r
+            {
+                position: absolute;
+                top: 60px;
+                left:180px;
+                background-color: #242746;
+                width: 40px;
+                height: 50px;
+                border-top-left-radius: 100%;
+                border-top-right-radius: 100%;
+                border-bottom-left-radius: 70%;
+                border-bottom-right-radius: 70%;
+                transform: rotate(5deg);
+                background-image: radial-gradient(#394269 6%, #242746 60%);
+            }
+            .eyeball_l
+            {
+                position: absolute;
+                top: 70px;
+                left:85px;
+                background-color: #4e5067;
+                width: 15px;
+                height: 20px;
+                border-radius: 100%;
+                transform: rotate(10deg);
+                
+            }
+            .eyeball_2
+            {
+                position: absolute;
+                top: 70px;
+                left:198px;
+                background-color: #4e5067;
+                width: 15px;
+                height: 20px;
+                border-radius: 100%;
+                transform: rotate(-10deg);
+                
+            }
+            .mouth
+            {
+                position: absolute;
+                top: 120px;
+                left:110px;
+                background-color: #602c14;
+                width: 80px;
+                height: 20px;
+                border-radius: 100%;
+                background-image: linear-gradient(#512711, #8d3b13);
+            }
+            .triangle-down 
+            {
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                width: 0px;
+                height: 0px;
+                border-left: 90px solid transparent;
+                border-right: 90px solid transparent;
+                border-top: 100px solid #d51d39;
+            }
+            .circle1
+            {
+              position: absolute;
+              top: 80px;
+              left: 36px;
+              width: 20px;
+              height: 140px;
+              border-radius: 100%;
+              background-color: #d51d39;
+              transform: rotate(-40deg);
+            }
+            .circle2
+            {
+              position: absolute;
+              top: 80px;
+              left: 124px;
+              width: 20px;
+              height: 140px;
+              border-radius: 100%;
+              background-color: #d51d39;
+              transform: rotate(40deg);
+            }
+            .halfCircle
+            {
+                position: absolute;
+                top: 41px;
+                left: 0px;
+                height:60px;
+                width:92px;
+                border-radius: 90px 90px 0 0;
+                background-color: #d51d39;
+            }
+            .halfCircle2
+            {
+                position: absolute;
+                top: 41px;
+                left: 88px;
+                height:60px;
+                width:92px;
+                border-radius: 90px 90px 0 0;
+                background-color: #d51d39;
+            }
+            .heart
+            {
+                position: absolute;
+                top: 100px;
+                left: 60px;
+                transform: rotate(16deg);
+            }
+            .arm_l
+            {
+                position: absolute;
+                top: 140px;
+                left: 50px;
+                height:130px;
+                width:60px;
+                border-radius: 90px 90px 90px 90px;
+                background-color:  #fcd15e;
+                transform: rotate(-60deg);
+                background-image: linear-gradient(30deg, #fcd15e, #f29a36);
+            }
+            .arm_r
+            {
+                position: absolute;
+                top: 180px;
+                left: 180px;
+                height:140px;
+                width:60px;
+                border-radius: 90px 90px 90px 90px;
+                background-color:  #fcd15e;
+                transform: rotate(250deg);
+                background-image: linear-gradient(-150deg, #fcd15e, #f29a36);
+            }
+            .c_l
+            {
+                position: absolute;
+                top: 40px;
+                left: 60px;
+                width: 60px; 
+                height: 15px;  
+                border: solid 7px #d16c00;
+                border-color: #d16c00 transparent transparent transparent;
+                border-radius: 50%/15px 15px 0 0;
+                transform: rotate(-18deg);
+            }
+            .c_2
+            {
+                position: absolute;
+                top: 40px;
+                left: 170px;
+                width: 60px; 
+                height: 15px;  
+                border: solid 7px #d16c00;
+                border-color: #d16c00 transparent transparent transparent;
+                border-radius: 50%/15px 15px 0 0;
+                transform: rotate(18deg);
+            }
+            
+            .emoji
+            {
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            @keyframes example 
+            {
+                from {transform: rotateX(0deg);}
+                to {transform: rotateX(360deg);}
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="emoji">
+        <div class="big_circle"></div>
+        <div class="eye_l"></div>
+        <div class="eye_r"></div>
+        <div class="eyeball_l"></div>
+        <div class="eyeball_2"></div>
+        <div class="mouth"></div>
+        
+        <div class="heart">
+            <div class="halfCircle"></div>
+            <div class="halfCircle2"></div>
+            <div class="triangle-down"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        
+        <div class="arm_l"></div>
+        <div class="arm_r"></div>
+        
+        <div class="c_l"></div>
+        <div class="c_2"></div>
+        </div>
+    </body>
+</html>
